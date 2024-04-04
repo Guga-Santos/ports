@@ -6,6 +6,9 @@ export default function Card() {
     const [index, setIndex] = useState(0);
     
     const handleClick = (target: HTMLButtonElement) => {
+        console.log(target.id)
+        console.log(index);
+        console.log(ports.length);
         if (target.id === "PREV") {
             setIndex(index < 1 ? ports.length - 1 : index - 1);
         } else {
@@ -27,16 +30,12 @@ export default function Card() {
                 type="button"
                 className="z-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                 id="PREV"
-                disabled={false}
-                onClick={(event) => {
-                    console.log("PREV button clicked");
-                    handleClick(event.target as HTMLButtonElement);
-                }}>
+                onClick={(event) => handleClick(event.target as HTMLButtonElement)}>
                     PREV
                 </button>
                 <button 
                 type="button"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                className="z-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                 id="NEXT"
                 onClick={(event) => handleClick(event.target as HTMLButtonElement)}>
                     NEXT
