@@ -1,0 +1,198 @@
+[
+    {
+        "port": [21],
+        "protocol": "TCP",
+        "service": "FTP",
+        "description": "FTP data transfer",
+        "use": "Used to transfer files from host to host."
+    },
+    {
+        "port": [22],
+        "protocol": "TCP",
+        "service": "SSH",
+        "description": "Secure Shell",
+        "use": "Used to secure connection to remote machines."
+    },
+    {
+        "port": [23],
+        "protocol": "TCP",
+        "service": "TELNET",
+        "description": "Telnet protocol",
+        "use": "Used for insecure communication using text-based environment."
+    },
+    {
+        "port": [25],
+        "protocol": "TCP",
+        "service": "SMTP",
+        "description": "Simple Mail Transfer Protocol",
+        "use": "Used to send emails over the network."
+    },
+    {
+        "port": [53],
+        "protocol": "TCP and UDP",
+        "service": "DNS",
+        "description": "Domain Name System",
+        "use": "Used to resolve hostnames to IP addresses."
+    },
+    {
+        "port": [69],
+        "protocol": "UDP",
+        "service": "TFTP",
+        "description": "Trivial File Transfer Protocol",
+        "use": "Used as a lightweight file transfer method for sending configuration files or network booting of an operating system."
+    },
+    {
+        "port": [80],
+        "protocol": "TCP",
+        "service": "HTTP",
+        "description": "HyperText Transfer Protocol",
+        "use": "Used for web server communication."
+    },
+    {
+        "port": [88],
+        "protocol": "UDP",
+        "service": "KERBEROS",
+        "description": "Kerberos protocol",
+        "use": "Used for authentication and authorization."
+    },
+    {
+        "port": [110],
+        "protocol": "TCP",
+        "service": "POP3",
+        "description": "Post Office Protocol",
+        "use": "Used for email retrieval."
+    },
+    {
+        "port": [119],
+        "protocol": "TCP",
+        "service": "NNTP",
+        "description": "Network News Transfer Protocol",
+        "use": "Used for news retrieval."
+    },
+    {
+        "port": [135],
+        "protocol": "TCP and UDP",
+        "service": "RPC",
+        "description": "Remote Procedure Call",
+        "use": "Facilitates communication between different system processes."
+    },
+    {
+        "port": [137, 138, 139],
+        "protocol": "TCP and UDP",
+        "service": "NETBIOS",
+        "description": "Network Basic Input Output System",
+        "use": "Used for network administration."
+    },
+    {
+        "port": [143],
+        "protocol": "TCP",
+        "service": "IMAP",
+        "description": "Internet Message Access Protocol",
+        "use": "Used for email retrieval."
+    },
+    {
+        "port": [161],
+        "protocol": "UDP",
+        "service": "SNMP",
+        "description": "Simple Network Management Protocol",
+        "use": "Used for network management."
+    },
+    {
+        "port": [162],
+        "protocol": "UDP",
+        "service": "SNMP",
+        "description": "Simple Network Management Protocol",
+        "use": "Used for network management."
+    },
+    {
+        "port": [389],
+        "protocol": "TCP and UDP",
+        "service": "LDAP",
+        "description": "Lightweight Directory Access Protocol",
+        "use": "Used for directory services authentication."
+    },
+    {
+        "port": [443],
+        "protocol": "TCP",
+        "service": "HTTPS",
+        "description": "HyperText Transfer Protocol Secure",
+        "use": "Used for secure web server communication."
+    },
+    {
+        "port": [445],
+        "protocol": "TCP",
+        "service": "SMB",
+        "description": "Server Message Block",
+        "use": "Used for file sharing and network communication."
+    },
+    {
+        "port": [465, 587],
+        "protocol": "TCP",
+        "service": "SMTPS",
+        "description": "Simple Mail Transfer Protocol Secure",
+        "use": "Used for secure email communication."
+    },
+    {
+        "port": [514],
+        "protocol": "UDP",
+        "service": "SYSLOG",
+        "description": "Syslog protocol",
+        "use": "Used for system logging."
+    },
+    {
+        "port": [636],
+        "protocol": "TCP",
+        "service": "LDAPS",
+        "description": "Lightweight Directory Access Protocol Secure",
+        "use": "Used for secure directory services authentication."
+    },
+    {
+        "port": [993],
+        "protocol": "TCP",
+        "service": "IMAPS",
+        "description": "Internet Message Access Protocol Secure",
+        "use": "Used for secure email retrieval."
+    },
+    {
+        "port": [995],
+        "protocol": "TCP",
+        "service": "POP3S",
+        "description": "Post Office Protocol Secure",
+        "use": "Used for secure email retrieval."
+    },
+    {
+        "port": [1433],
+        "protocol": "TCP",
+        "service": "MSSQL",
+        "description": "Microsoft SQL Server",
+        "use": "Used for database management."
+    },
+    {
+        "port": [1645, 1646],
+        "protocol": "UDP",
+        "service": "RADIUS",
+        "description": "Remote Authentication Dial-In User Service",
+        "use": "Used for authentication, authorization, and accounting for network access."
+    },
+    {
+        "port": [1812, 1813],
+        "protocol": "UDP",
+        "service": "RADIUS",
+        "description": "Remote Authentication Dial-In User Service",
+        "use": "Used for authentication, authorization, and accounting for network access."
+    },
+    {
+        "port": [3389],
+        "protocol": "TCP",
+        "service": "RDP",
+        "description": "Remote Desktop Protocol",
+        "use": "Used for remote desktop connections."
+    },
+    {
+        "port": [6514],
+        "protocol": "TCP",
+        "service": "SYSLOGTLS",
+        "description": "Syslog protocol over TLS/SSL",
+        "use": "Used for secure system logging."
+    }
+]
