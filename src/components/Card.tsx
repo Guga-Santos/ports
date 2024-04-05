@@ -18,6 +18,11 @@ export default function Card() {
             setVisible(false);
         }
     }
+
+    const handleRandom = () => {
+        setIndex(Math.floor(Math.random() * ports.length));
+        setVisible(false);
+    }
     
 
     return (
@@ -44,25 +49,35 @@ export default function Card() {
             <p className="flex items-center justify-center w-80 h-20 flex items-center text-center">
                 {visible ? ports[index].use : "What is the use of the service?"}
             </p>
-            <div className="w-96 h-16 border-2 flex justify-between items-center">
-                <button 
-                type="button"
-                className="z-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 mx-2 rounded"
-                id="PREV"
-                onClick={(event) => handleClick(event.target as HTMLButtonElement)}>
-                    PREV
-                </button>
-                <button 
-                type="button"
-                onClick={() => setVisible(true)}
-                > View </button>
-                <button 
-                type="button"
-                className="z-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 mx-2 rounded"
-                id="NEXT"
-                onClick={(event) => handleClick(event.target as HTMLButtonElement)}>
-                    NEXT
-                </button>
+            <div className="w-96 h-28 border-2 flex flex-col justify-between items-center">
+                <div className="w-96 h-16 border-2 flex justify-between items-center">
+                    <button 
+                    type="button"
+                    className="z-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 mx-2 rounded"
+                    id="PREV"
+                    onClick={(event) => handleClick(event.target as HTMLButtonElement)}>
+                        PREV
+                    </button>
+                    <button 
+                    type="button"
+                    onClick={() => setVisible(true)}
+                    > View </button>
+                    <button 
+                    type="button"
+                    className="z-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-12 mx-2 rounded"
+                    id="NEXT"
+                    onClick={(event) => handleClick(event.target as HTMLButtonElement)}>
+                        NEXT
+                    </button>
+                </div>
+                <div className="h-12 flex items-center">
+                    <button 
+                    type="button"
+                    onClick={() => handleRandom()}
+                    className="z-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-36 mx-2 rounded">
+                    RANDOM
+                    </button>
+                </div>
             </div>
         </div>
     )
