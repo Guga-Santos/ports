@@ -32,7 +32,7 @@ export default function Card() {
             </h1>
             <p className="flex items-center justify-center w-96 h-8 flex items-center border-2 font-bold"> {visible ? ports[index].protocol : "What protocol is in use?"}</p>
             { !visible 
-            ? <p className="w-96 h-8 text-center">Has an alternative port?</p>  
+            ? <p className="flex items-center justify-center w-96 h-8 flex items-center">Has an alternative port?</p>  
             : 
             <div className={`w-44 h-8 flex ${!ports[index].port[2] ? "justify-center" : "justify-between"} items-center px-12`}>
             <h2>{ports[index].port[1] ? ports[index].port[1] : "No!"}</h2>
