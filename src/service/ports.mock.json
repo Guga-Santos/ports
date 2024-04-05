@@ -100,9 +100,9 @@
     {
         "port": [162],
         "protocol": "UDP",
-        "service": "SNMP",
-        "description": "Simple Network Management Protocol",
-        "use": "Used for network management."
+        "service": "SNMP Trap",
+        "description": "Simple Network Management Protocol Trap",
+        "use": "Responsible for sending SNMP Trap Messages"
     },
     {
         "port": [389],
